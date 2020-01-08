@@ -52,7 +52,7 @@ def main():
         last_chat_id = last_update['message']['chat']['id']
         last_chat_name = last_update['message']['chat']['first_name']
 
-        greet_bot.send_message(last_chat_id, 'Отправил сообщение вне цикла, {}'.format(last_chat_name))
+        greet_bot.send_message(last_chat_id, 'Изменил сообщение, смотрю что будет, {}'.format(last_chat_name))
 
         if isinstance(last_update, list):
             last_update_id = last_update[-1]['update_id']
